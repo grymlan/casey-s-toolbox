@@ -6,7 +6,11 @@ import time
 import json
 import urllib.request
 
-start_time = time.time()
+if __name__ == "__main__":
+    main()
+
+def main():
+    start_time = time.time()
 
 def start_timer():
     """
@@ -144,9 +148,3 @@ def check_latest_version(repo_url, app_name, current_version):
     except Exception as e:
         print(f"Error checking latest version: {e}")
         return None
-
-
-
-
-
-
